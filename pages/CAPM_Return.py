@@ -82,7 +82,7 @@ try :
 
     with col1:
         st.markdown("### Calculated Beta Value")
-        st.dataframe(beta_df,width='stretch')
+        st.dataframe(beta_df,width='stretch',hide_index=True)
 
     rf = 0
     rm = stocks_daily_return['sp500'].mean()*252
@@ -98,7 +98,7 @@ try :
 
     with col2:
         st.markdown("### Calculated Return using CAPM")
-        st.dataframe(return_df,width='stretch')
+        st.dataframe(return_df,width='stretch',hide_index=True)
 
 except:
     st.write("Please Select Valid Inputs")
