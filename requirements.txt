@@ -6,4 +6,4 @@ plotly
 scikit-learn
 statsmodels
 pandas-datareader
-pandas-ta
+pandas-ta-classic
